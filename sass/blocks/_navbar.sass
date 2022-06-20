@@ -1,5 +1,4 @@
 
-    
 .header__navbar
     &-wrap
         display: flex
@@ -7,29 +6,81 @@
         min-height: 70px
         justify-content: space-between
         padding-top: 55px
+
     &-menu
         display: flex
+        flex: 0 1 72%
+        
         font-size: 20px
         font-weight: 500
         font-family: 'poppins'
         color: #263238
-        width: 40%
-        justify-content: space-around
-        align-content: start
-    
-        
+        align-items:  center
+        justify-content: space-between
+        max-height: 20px
+        @media screen and (max-width:$minLaptopWidth)
+            display: none
+        @media screen and (max-width:$minDescktopWidth)
+            font-size: 16px
+    &-toggle
+        opacity: 0
+    &-burger
+        input
+            display: block
+            width: 30px
+            height: 25px
+            position: absolute
+            opacity: 0
+        input:checked ~ span:nth-of-type(1)
+            
+            transform: translate(7px, 1px) rotate(45deg) 
+        input:checked ~ span:nth-of-type(2)
+            
+            transform: translate(7px, 13px) rotate(-45deg) 
+        input:checked ~ span:nth-of-type(3)
+            opacity: 0
+            transform: translate(6px, 0) rotate(-45deg)
+       
+
+        span
+            display: block
+            background-color: #39515E
+            width: 30px
+            height: 3px
+            position: relative
+
+            margin-bottom: 5px
+            transform-origin: 4px 0
+            transition: all 0.5s
+            border-radius: 3px
+            cursor: pointer
+            z-index: -1
+
+        span:nth-of-type(1)
+
+            transform-origin: 0% 0%
+        span:nth-of-type(2)
+
+            transform-origin: 0% 100%
+        span:nth-of-type(3)
+            width: 22px
+        @media screen and (min-width:$minLaptopWidth)
+            display: none
+
+
     &-links
         position: relative
         cursor: pointer
-    &-letstalk 
+        margin: 0 10px
+    &-letstalk
         padding: 17px 57px
-       
-     
-        
-        
-
-.header__logo
-    font-family: poppins
-    font-size: 36px 
-    &__right
-        color:  grey
+        font-size: 24px
+        @media screen and (max-width:$minDescktopWidth)
+            font-size: 18px
+    &-logo
+        font-family: poppins
+        font-size: 36px
+        &__right
+            color: grey
+        @media screen and (max-width:$minDescktopWidth)
+            font-size: 30px
