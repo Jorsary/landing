@@ -2,64 +2,65 @@
     padding-top: 65px
 
     &__container
-        
+
         display: flex
         justify-content: space-between
-        @media screen and (max-width:$minDescktopWidth)
-
 
         @media screen and (max-width:$minTabletWidth)
-            
-            flex-direction: column-reverse
-            
+            flex-flow: column-reverse
+            align-items: center
+            align-content: center
+            text-align: center
+
+    &__image
+        @media screen and (max-width:$minDescktopWidth)
+            max-width: 460px
+        @media screen and (max-width:$minLaptopWidth)
+            max-width: 352px
+        @media screen and (max-width:$minTabletWidth)
+            max-width: 90%
+
     &__welcome
-        width: 100%  
+        width: 100%
+
     &__content
-        @media screen and (max-width:$minDescktopWidth)
-        text-align: center 
-           justify-content: center
-        @media screen and (max-width:$minTabletWidth)
-           text-align: center 
-           justify-content: center
+        justify-content: space-around
+
     &__titlelamp
         display: flex
-        
-        
-    &__lamp
-        padding-top: 55px
 
+    &__lamp
+        width: 100%
+        padding-top: 30%
+        @media screen and (max-width:$minDescktopWidth)
+            width: 20%
         @media screen and (max-width:$minTabletWidth)
             display: none
 
     &__title
         padding-top: 50px
-        padding-bottom: 25px 
-        margin: 0 auto
+        padding-bottom: 25px
+        margin: 0
+        font-weight: 600
         font-size: 64px
+        line-height: 80px
         text-align: left
         @media screen and (max-width:$minDescktopWidth)
-            text-align: left
             font-size: 48px
-        @media screen and (max-width:$minTabletWidth)
+            line-height: 64px
+        @media screen and (max-width:$minLaptopWidth)
+            font-size: 36px
+            line-height: 45px
+        @media screen and (max-width:$minMobileWidth)
+            text-align: center
         span
             display: block
             white-space: nowrap
             @media screen and (max-width:$minTabletWidth)
                 display: inline
                 font-size: 34px
-                
         
-        
-    &__getstarted
-        padding: 32px 116px
-        font-size: 36px
-        font-weight: 400
-        line-height: 54px
-        @media screen and (max-width:$minDescktopWidth)
-            font-size: 24px   
-        
-        
-            
+
     &__text
         font-size: 24px
         color: #8F95A5
@@ -69,9 +70,30 @@
         line-height: 36px
         text-align: left
         @media screen and (max-width:$minDescktopWidth)
+            padding-bottom: 33px
             font-size: 20px
+            line-height: 30px
+        @media screen and (max-width:$minLaptopWidth)
+            font-size: 16px
+            line-height: 24px
+            max-width: 333px
         @media screen and (max-width:$minTabletWidth)
-            margin: auto
+            text-align: center
+            margin: 0 auto
+            max-width: 500px
         
-    
-        
+    &__getstarted
+        padding: 32px 116px
+        font-size: 36px
+        font-weight: 400
+        line-height: 54px
+        @media screen and (max-width:$minDescktopWidth)
+            font-size: 24px
+            line-height: 36px
+            padding: 20px 77px
+        @media screen and (max-width:$minLaptopWidth)
+            font-size: 18px
+            line-height: 27px
+            padding: 19px 67px
+        @media screen and (max-width:$minTabletWidth)
+            padding: 24px 100px
