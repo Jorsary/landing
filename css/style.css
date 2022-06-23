@@ -148,10 +148,8 @@
   background-color: #ffffff;
 }
 
-.hero {
-  padding-top: 65px;
-}
 .hero__container {
+  padding-top: 65px;
   display: flex;
   justify-content: space-between;
 }
@@ -297,4 +295,61 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
+}
+
+.skills__container {
+  padding-top: 147px;
+  width: 100%;
+}
+.skills__title {
+  text-align: center;
+}
+.skills__grid {
+  padding-top: 96px;
+  display: grid;
+  grid-template-areas: "a b c" "a d d";
+}
+.skills__item {
+  width: 100%;
+  height: 100%;
+}
+.skills__item-speaking {
+  margin: 9px;
+  grid-area: a;
+}
+.skills__item-writing {
+  margin: 9px;
+  grid-area: b;
+}
+.skills__item-reading {
+  margin: 9px;
+  grid-area: c;
+}
+.skills__item-listening {
+  margin: 9px;
+  grid-area: d;
+}
+.skills__item-listening > img {
+  float: right;
+}
+
+.skill {
+  background-color: #F5F5F5;
+  border-radius: 10px;
+  padding: 41px;
+}
+.skill__title {
+  font-size: 30px;
+  line-height: 80px;
+}
+.skill__text {
+  width: 350px;
+  font-size: 16px;
+  line-height: 24px;
+  color: #8F95A5;
+  padding-bottom: 20px;
+}
+.skill__learnmore {
+  padding: 15px 50px;
+  font-size: 16px;
 }/*# sourceMappingURL=style.css.map */
