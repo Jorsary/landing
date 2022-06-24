@@ -1,59 +1,165 @@
 
 .skills
-    
+
     &__container
         padding-top: 147px
-        width: 100%
-        
+        width: 934px
+
     &__content
 
     &__title
         text-align: center
+        font-size: 48px
+        line-height: 80px
+        @media screen and (max-width:$minDescktopWidth)
+            font-size: 36px
+        @media screen and (max-width:$minLaptopWidth)
+            font-size: 30px
+
     &__grid
-        
+        justify-content: center
         padding-top: 96px
         display: grid
         grid-template-areas: 'a b c' 'a d d'
-
+        @media screen and (max-width:$minDescktopWidth)
+            padding-top: 58px
+        @media screen and (max-width:$minLaptopWidth)
+            padding-top: 37px
+        @media screen and (max-width:$minTabletWidth)
+            grid-template-areas: 'a b ' 'c d'
     &__item
-        
         width: 100%
         height: 100%
         &-speaking
-            
-                
             margin: 9px
             grid-area: a
+            @media screen and (max-width:$minDescktopWidth)
+                margin: 6px
+            @media screen and (max-width:$minLaptopWidth)
+                margin: 5px
+            > img
+                width: 360px
+                height: 360px
+                @media screen and (max-width:$minDescktopWidth)
+                    width: 290px
+                    height: 290px
+                @media screen and (max-width:$minLaptopWidth)
+                    width: 214px
+                    height: 214px
+                @media screen and (max-width:$minTabletWidth)
+                    width: 185px
+                    height: 185px
+
         &-writing
             margin: 9px
             grid-area: b
+            @media screen and (max-width:$minDescktopWidth)
+                margin: 6px
+            @media screen and (max-width:$minLaptopWidth)
+                margin: 5px
+            > img
+                width: 293px
+                height: 293px
+                @media screen and (max-width:$minDescktopWidth)
+                    width: 205px
+                    height: 205px
+                @media screen and (max-width:$minLaptopWidth)
+                    width: 200px
+                    height: 200px
+                @media screen and (max-width:$minTabletWidth)
+                    width: 182px
+                    height: 182px
         &-reading
             margin: 9px
             grid-area: c
-        &-listening
+            @media screen and (max-width:$minDescktopWidth)
+                margin: 6px
+            @media screen and (max-width:$minLaptopWidth)
+                margin: 5px
             > img
-                float: right
+                width: 371px
+                height: 247px
+                @media screen and (max-width:$minDescktopWidth)
+                    width: 243px
+                    height: 162px
+                @media screen and (max-width:$minLaptopWidth)
+                    width: 216px
+                    height: 144px
+                @media screen and (max-width:$minTabletWidth)
+                    width: 198px
+                    height: 132px
+
+        &-listening
             margin: 9px
             grid-area: d
+            @media screen and (max-width:$minDescktopWidth)
+                margin: 6px
+            @media screen and (max-width:$minLaptopWidth)
+                margin: 5px
+            > img
+                float: right
+                width: 382px
+                height: 255px
+                @media screen and (max-width:$minDescktopWidth)
+                    width: 254px
+                    height: 169px
+                @media screen and (max-width:$minLaptopWidth)
+                    width: 202px
+                    height: 134px
+                @media screen and (max-width:$minTabletWidth)
+                    float: none
+                    width: 206px
+                    height: 137px
+
 .skill
     background-color: #F5F5F5
     border-radius: 10px
-    padding: 41px
-
+    padding: 38px
+    @media screen and (max-width:$minDescktopWidth)
+        padding: 28px
+    @media screen and (max-width:$minLaptopWidth)
+        padding: 10px
     &__title
-        
+        padding-top: 5px
         font-size: 30px
         line-height: 80px
+        @media screen and (max-width:$minDescktopWidth)
+            font-size: 22px
+        @media screen and (max-width:$minLaptopWidth)
+            font-size: 20px
+        @media screen and (max-width:$minTabletWidth)
+            font-size: 18px
     &__text
-        width: 350px
         font-size: 16px
         line-height: 24px
         color: #8F95A5
         padding-bottom: 20px
+        @media screen and (max-width:$minDescktopWidth)
+            font-size: 14px
+            line-height: 21px
+        @media screen and (max-width:$minLaptopWidth)
+            font-size: 13px
+            line-height: 19.5px
+        @media screen and (max-width:$minTabletWidth)
+            font-size: 12px
+            line-height: 18px
     &__learnmore
         padding: 15px 50px
-        font-size: 16px
+        font-size: 20px
+        line-height: 30px
+        font-weight: 500
         
-    &__image
-        
-        
+        @media screen and (max-width:$minDescktopWidth)
+            font-size: 18px
+            line-height: 27px
+            padding: 13px 40px
+        @media screen and (max-width:$minLaptopWidth)
+            font-size: 16px
+            line-height: 24px
+        @media screen and (max-width:$minTabletWidth)
+            font-size: 14px
+            line-height: 21px
+            padding: 14px 54px
+
+           
+
