@@ -1,4 +1,52 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap");
+.sticky {
+  position: -webkit-sticky;
+  position: sticky;
+  top: -35px;
+  background-color: #263238;
+  border-radius: 15px;
+  height: 120px;
+  transition: 1.2s;
+}
+@media screen and (max-width: 992px) {
+  .sticky {
+    height: 100px;
+  }
+}
+.sticky .header__navbar-menu {
+  color: #ffffff;
+  transition: 1.2s;
+}
+.sticky .header__navbar-letstalk {
+  color: #263238;
+  background-color: #ffffff;
+  display: inline-block;
+  border: 2px solid #263238;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 1.2s;
+}
+.sticky .header__navbar-letstalk:hover {
+  color: #ffffff;
+  border-width: 2px;
+  border-color: #263238;
+  border-radius: 5px;
+  background-color: #263238;
+  transition: 1.2s;
+}
+.sticky .header__navbar-logo {
+  color: white;
+  transition: 1.2s;
+}
+.sticky .header__navbar-links {
+  color: white;
+  transition: 1.2s;
+}
+
+.header__navbar {
+  transition: 5s;
+  border-radius: 15px;
+}
 .header__navbar-wrap {
   display: flex;
   align-items: center;
@@ -7,6 +55,7 @@
   padding-top: 55px;
 }
 .header__navbar-menu {
+  position: relative;
   display: flex;
   flex: 0 1 72%;
   font-size: 20px;
@@ -78,6 +127,8 @@
   position: relative;
   cursor: pointer;
   margin: 0 10px;
+  text-decoration: none;
+  color: black;
 }
 .header__navbar-letstalk {
   padding: 17px 57px;
@@ -124,6 +175,7 @@
   border: 2px solid #263238;
   border-radius: 5px;
   cursor: pointer;
+  transition: 0.6s;
 }
 .button-light:hover {
   border-width: 2px;
@@ -139,6 +191,7 @@
   border: 2px solid #263238;
   border-radius: 5px;
   cursor: pointer;
+  transition: 0.6s;
 }
 .button-dark:hover {
   color: #263238;
@@ -148,6 +201,9 @@
   background-color: #ffffff;
 }
 
+.hero {
+  padding-bottom: 96px;
+}
 .hero__container {
   padding-top: 65px;
   display: flex;
@@ -299,7 +355,6 @@
 
 .skills__container {
   padding-top: 147px;
-  width: 934px;
 }
 .skills__title {
   text-align: center;
@@ -318,7 +373,6 @@
 }
 .skills__grid {
   justify-content: center;
-  padding-top: 96px;
   display: grid;
   grid-template-areas: "a b c" "a d d";
 }
@@ -336,10 +390,6 @@
   .skills__grid {
     grid-template-areas: "a b " "c d";
   }
-}
-.skills__item {
-  width: 100%;
-  height: 100%;
 }
 .skills__item-speaking {
   margin: 9px;
@@ -414,6 +464,9 @@
   }
 }
 .skills__item-reading {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   margin: 9px;
   grid-area: c;
 }
@@ -489,6 +542,7 @@
 }
 
 .skill {
+  min-width: 435px;
   background-color: #F5F5F5;
   border-radius: 10px;
   padding: 38px;
@@ -496,15 +550,22 @@
 @media screen and (max-width: 1600px) {
   .skill {
     padding: 28px;
+    min-width: 302px;
   }
 }
 @media screen and (max-width: 992px) {
   .skill {
     padding: 10px;
+    min-width: 227px;
   }
 }
+.skill__content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+}
 .skill__title {
-  padding-top: 5px;
   font-size: 30px;
   line-height: 80px;
 }
@@ -527,7 +588,7 @@
   font-size: 16px;
   line-height: 24px;
   color: #8F95A5;
-  padding-bottom: 20px;
+  padding-bottom: 25px;
 }
 @media screen and (max-width: 1600px) {
   .skill__text {
@@ -572,4 +633,96 @@
     line-height: 21px;
     padding: 14px 54px;
   }
+}
+
+.about__container {
+  padding-top: 282px;
+  display: flex;
+  justify-content: space-between;
+}
+.about__content {
+  width: 635px;
+}
+.about__title {
+  font-weight: 600;
+  font-size: 48px;
+  line-height: 80px;
+  color: #2A3246;
+}
+.about__text {
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 30px;
+  color: #8F95A5;
+}
+.about__stats {
+  display: flex;
+  justify-content: space-between;
+}
+.about__amount {
+  text-align: center;
+  font-weight: 600;
+  font-size: 48px;
+  line-height: 80px;
+  color: #2A3246;
+}
+.about__name {
+  text-align: center;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 30px;
+  color: #8F95A5;
+}
+
+.pricing__title {
+  text-align: center;
+  font-weight: 600;
+  font-size: 48px;
+  line-height: 80px;
+}
+.pricing__content {
+  display: flex;
+  align-content: space-between;
+}
+.pricing__pricetag {
+  display: flex;
+  background: #EEEEEE;
+  border-radius: 5px;
+  align-items: flex-start;
+  cursor: pointer;
+}
+.pricing__pricetag-value {
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 45px;
+  color: #263238;
+}
+.pricing__pricetag-permonth {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 27px;
+  color: #546269;
+}
+.pricing__namecourse {
+  font-weight: 600;
+  font-size: 30px;
+  line-height: 48px;
+  color: #263238;
+}
+.pricing__text {
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 30px;
+  color: #8F95A5;
+}
+
+.price {
+  display: flex;
+  flex-direction: column;
+  align-items: space-between;
+  border: 1px solid;
+}
+
+.price::not(:last-child) {
+  margin-right: 100px;
 }/*# sourceMappingURL=style.css.map */

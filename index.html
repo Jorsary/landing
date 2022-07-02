@@ -7,13 +7,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.css">
+    <script src="js/script.js"></script>
 
     <title>Document</title>
 </head>
+<style>
+    html {
+        scroll-behavior: smooth;
+        /* свойство scroll-behavior не наследуется, применяется к прокручиваемым блокам */
+    }
+</style>
 
 <body>
-    <div class="wraper">
-        <header class="header">
+    <div id="wraper" class="wraper">
+        <header>
             <div class="header__navbar">
                 <div class="_container header__container">
 
@@ -27,9 +34,9 @@
                         <!-- /.logo -->
                         <div class="header__navbar-menu">
                             <div>
-                                <a class="header__navbar-links">Home</a>
-                                <a class="header__navbar-links">Skills</a>
-                                <a class="header__navbar-links">About us</a>
+                                <a href="#wraper" class="header__navbar-links">Home</a>
+                                <a href="#skills" class="header__navbar-links">Skills</a>
+                                <a href="#about" class="header__navbar-links">About us</a>
                                 <a class="header__navbar-links">Pricing</a>
                                 <a class="header__navbar-links">Contacts</a>
                             </div>
@@ -46,7 +53,8 @@
                         </div>
                     </div>
                 </div>
-                <!-- /.navbar -->
+            </div>
+            <!-- /.navbar -->
         </header>
         <div class="hero">
             <div class="_container hero__container">
@@ -73,7 +81,7 @@
 
         </div>
         <!-- /.hero -->
-        <div class="skills">
+        <div id="skills" class="skills">
 
             <div class="_container skills__container">
 
@@ -83,45 +91,63 @@
                     <div class="skills__grid">
                         <div class="skills__item-speaking skill">
                             <img src="img/speaking.svg" class="skill__image">
-                            <h6 class="skill__title">Speaking</h6>
-                            <p class="skill__text">Improve your English skills and confidence.
-                                Live classes and interactive lessons online.
-                                20% extra free for a limited time only</p>
+                            <div class="skill__content">
+                                <div class="">
+                                    <h6 class="skill__title">Speaking</h6>
+                                    <p class="skill__text">Improve your English skills and confidence.
+                                        Live classes and interactive lessons online.
+                                        20% extra free for a limited time only</p>
 
 
-                            <p class="skill__text">Learn English online and improve your<br>
-                                skills through our high-quality courses
-                                and resources – all designed for adult language learners.</p>
+                                    <p class="skill__text">Learn English online and improve your<br>
+                                        skills through our high-quality courses
+                                        and resources – all designed for adult language learners.</p>
+                                </div>
 
-                            <a class="button-dark skill__learnmore">Learn more</a>
+
+                                <a class="button-dark skill__learnmore">Learn more</a>
+                            </div>
+
                         </div>
 
 
                         <div class="skills__item-writing skill">
                             <img src="img/writing.svg" class="skill__image">
-                            <h6 class="skill__title">Writing</h6>
-                            <p class="skill__text">One of the most important and extensive
-                                areas of natural science, the science that
-                                studies substances, also their composition </p>
+                            <div class="skill__content">
+                                <div class="">
+                                    <h6 class="skill__title">Writing</h6>
+                                    <p class="skill__text">One of the most important and extensive
+                                        areas of natural science, the science that
+                                        studies substances, also their composition </p>
+                                </div>
 
-                            <a class="button-dark skill__learnmore">Learn more</a>
+
+                                <a class="button-dark skill__learnmore">Learn more</a>
+                            </div>
+
                         </div>
                         <div class="skills__item-reading skill">
                             <img src="img/reading.svg" class="skill__image">
-                            <h6 class="skill__title">Reading</h6>
-                            <p class="skill__text">perception and response actions of the user
-                                resulting from the use and/or upcoming use
-                                of the product, system or service</p>
+                            <div class="skill__content">
+                                <h6 class="skill__title">Reading</h6>
+                                <p class="skill__text">perception and response actions of the user
+                                    resulting from the use and/or upcoming use
+                                    of the product, system or service</p>
 
-                            <a class="button-dark skill__learnmore">Learn more</a>
+                                <a class="button-dark skill__learnmore">Learn more</a>
+                            </div>
+
                         </div>
                         <div class="skills__item-listening skill">
                             <img src="img/Podcast.svg" class="skill__image">
-                            <h6 class="skill__title">Listening</h6>
-                            <p class="skill__text">Here you can find activities to practise
-                                your listening skills. Listening will help you
-                                to improve your understanding </p>
-                            <a class="button-dark skill__learnmore">Learn more</a>
+                            <div class="skill__content">
+                                <h6 class="skill__title">Listening</h6>
+                                <p class="skill__text">Here you can find activities to practise
+                                    your listening skills. Listening will help you
+                                    to improve your understanding </p>
+                                <a class="button-dark skill__learnmore">Learn more</a>
+                            </div>
+
                         </div>
 
                     </div>
@@ -129,6 +155,86 @@
             </div>
         </div>
         <!-- /.skills -->
+        <div id="about" class="about">
+            <div class="_container about__container">
+                <div class="about__content">
+                    <h1 class="about__title">About Us</h1>
+                    <p class="about__text">The model offers a framework for discussing problems related to the user's
+                        experience, as well as possible ways and means of solving them. Application development begins
+                        at the top level (strategy), where the future software product is described quite abstractly
+                        from the point of view of the expectations of both users and the customer.
+                    </p>
+                    <div class="about__stats">
+                        <div class="about__pupils">
+                            <h1 class="about__amount">800</h1>
+                            <p class="about__name">Pupils</p>
+                        </div>
+                        <div class="about__teachers">
+                            <h1 class="about__amount">18</h1>
+                            <p class="about__name">Teachers</p>
+                        </div>
+                        <div class="about__lang">
+                            <h1 class="about__amount">6</h1>
+                            <p class="about__name">Foreign languages</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="about__image">
+                    <img src="img/dollar.svg" alt="" class="about__dollar">
+                </div>
+            </div>
+
+        </div>
+        <!-- /.aboutus -->
+        <div id='pricing' class="pricing">
+            <div class="_container pricing__container">
+                <h1 class="pricing__title">Pricing</h1>
+                <div class="pricing__content">
+                    <div class="pricing__item-selfstudy price">
+                        <div class="pricing__image">
+                            <img src="img/self-study.svg" alt="" class="pricing__selfimg">
+                        </div>
+                        <h3 class="pricing__namecourse">Self-study online course</h3>
+                        <p class="pricing__text">Start learning English online in live classes
+                            with qualified EC teachers and students
+                            from all over the world.</p>
+                        <a class="pricing__pricetag">
+                            <h5 class="pricing__pricetag-value">£5.99</h5>
+                            <p class="pricing__pricetag-permonth">per month</p>
+                        </a>
+                    </div>
+                    <div class="pricing__item-online price">
+                        <div class="pricing__image">
+                            <img src="img/Classes.svg" class="pricing__selfimg">
+                        </div>
+                        <div class="price__content">
+                            <h3 class="pricing__namecourse">Live online classes</h3>
+                            <p class="pricing__text">Interactive group classes with expert
+                                teachers. Free 7-day trial</p>
+                            <a class="pricing__pricetag">
+                                <h5 class="pricing__pricetag-value">£12.99</h5>
+                                <p class="pricing__pricetag-permonth">per month</p>
+                            </a>
+
+                        </div>
+                    </div>
+                    <div class="pricing__item-personak price">
+                        <div class="pricing__image">
+                            <img src="img/personal.svg" class="pricing__selfimg">
+                        </div>
+                        <h3 class="pricing__namecourse">Personal Tuition</h3>
+                        <p class="pricing__text">Online one-to-one English tutoring – enjoy
+                            our first session for only $1</p>
+                        <a class="pricing__pricetag">
+                            <h5 class="pricing__pricetag-value">£20.99</h5>
+                            <p class="pricing__pricetag-permonth">per month</p>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <!-- /.pricing -->
 
     </div>
 </body>

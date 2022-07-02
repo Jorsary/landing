@@ -1,6 +1,45 @@
+.sticky
+    position: sticky
+    top: -35px
+    background-color: #263238
+    border-radius: 15px
+    height: 120px
+    transition: 1.2s
+    @media screen and (max-width:$minLaptopWidth)
+        height: 100px
+    .header__navbar
+
+        &-menu
+            color: #ffffff
+            transition: 1.2s
+        &-letstalk
+            color: #263238
+            background-color: #ffffff
+            display: inline-block
+            border: 2px solid #263238
+            border-radius: 5px
+            cursor: pointer
+            transition: 1.2s
+
+        &-letstalk:hover
+            color: #ffffff
+            border-width: 2px
+            border-color: #263238
+            border-radius: 5px
+            background-color: #263238
+            transition: 1.2s
+        &-logo
+            color: white
+            transition: 1.2s
+        &-links
+            color: white
+            transition: 1.2s
 
 .header__navbar
+    transition: 5s
+    border-radius: 15px
     &-wrap
+
         display: flex
         align-items: center
         min-height: 70px
@@ -8,6 +47,7 @@
         padding-top: 55px
 
     &-menu
+        position: relative
         display: flex
         flex: 0 1 72%
 
@@ -18,7 +58,7 @@
         align-items: center
         justify-content: space-between
         max-height: 20px
-        
+
         @media screen and (max-width:$minLaptopWidth)
             display: none
         @media screen and (max-width:$minDescktopWidth)
@@ -55,7 +95,7 @@
             border-radius: 3px
             cursor: pointer
             z-index: -1
-            
+
         span:nth-of-type(1)
 
             transform-origin: 0% 0%
@@ -71,7 +111,9 @@
         position: relative
         cursor: pointer
         margin: 0 10px
-        
+        text-decoration: none
+        color: black
+
     &-letstalk
         padding: 17px 57px
         font-size: 24px

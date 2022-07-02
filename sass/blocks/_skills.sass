@@ -3,7 +3,7 @@
 
     &__container
         padding-top: 147px
-        width: 934px
+        
 
     &__content
 
@@ -18,7 +18,7 @@
 
     &__grid
         justify-content: center
-        padding-top: 96px
+        
         display: grid
         grid-template-areas: 'a b c' 'a d d'
         @media screen and (max-width:$minDescktopWidth)
@@ -28,15 +28,17 @@
         @media screen and (max-width:$minTabletWidth)
             grid-template-areas: 'a b ' 'c d'
     &__item
-        width: 100%
-        height: 100%
+        
+        
         &-speaking
+            
             margin: 9px
             grid-area: a
             @media screen and (max-width:$minDescktopWidth)
                 margin: 6px
             @media screen and (max-width:$minLaptopWidth)
                 margin: 5px
+            
             > img
                 width: 360px
                 height: 360px
@@ -53,10 +55,14 @@
         &-writing
             margin: 9px
             grid-area: b
+            
+            
             @media screen and (max-width:$minDescktopWidth)
                 margin: 6px
             @media screen and (max-width:$minLaptopWidth)
                 margin: 5px
+                
+            
             > img
                 width: 293px
                 height: 293px
@@ -66,16 +72,21 @@
                 @media screen and (max-width:$minLaptopWidth)
                     width: 200px
                     height: 200px
+                    
                 @media screen and (max-width:$minTabletWidth)
                     width: 182px
                     height: 182px
         &-reading
+            display: flex
+            flex-direction: column
+            justify-content: space-between
             margin: 9px
             grid-area: c
             @media screen and (max-width:$minDescktopWidth)
                 margin: 6px
             @media screen and (max-width:$minLaptopWidth)
                 margin: 5px
+                
             > img
                 width: 371px
                 height: 247px
@@ -96,6 +107,7 @@
                 margin: 6px
             @media screen and (max-width:$minLaptopWidth)
                 margin: 5px
+            
             > img
                 float: right
                 width: 382px
@@ -112,15 +124,28 @@
                     height: 137px
 
 .skill
+    min-width: 435px
     background-color: #F5F5F5
     border-radius: 10px
     padding: 38px
     @media screen and (max-width:$minDescktopWidth)
         padding: 28px
+        min-width: 302px
     @media screen and (max-width:$minLaptopWidth)
         padding: 10px
+        min-width: 227px
+    
+    &__content
+        
+        display: flex
+        flex-direction: column
+        justify-content: space-between
+        align-items: flex-start
+        
+        
+        
+        
     &__title
-        padding-top: 5px
         font-size: 30px
         line-height: 80px
         @media screen and (max-width:$minDescktopWidth)
@@ -133,7 +158,7 @@
         font-size: 16px
         line-height: 24px
         color: #8F95A5
-        padding-bottom: 20px
+        padding-bottom: 25px
         @media screen and (max-width:$minDescktopWidth)
             font-size: 14px
             line-height: 21px
