@@ -1,4 +1,5 @@
 .pricing
+    
     &__container
     &__title
         text-align: center
@@ -8,24 +9,27 @@
     &__content
         display: flex
         align-content: space-between
+        height: 582px
 
-    &__pricetag
+    &__cost
         display: flex
         background: #EEEEEE
         border-radius: 5px
-        align-items: flex-start
         cursor: pointer
-        
-        &-value
+        align-items: center
+        padding: 0px 20px
+        &-left
             font-weight: 400
             font-size: 30px
             line-height: 45px
             color: #263238
-        &-permonth
+        &-right
             font-weight: 400
             font-size: 18px
             line-height: 27px
             color: #546269
+            margin-left: 5px
+            
 
     &__namecourse
         font-weight: 600
@@ -43,7 +47,8 @@
 .price
     display: flex
     flex-direction: column
-    align-items: space-between
-    border: 1px solid
-.price::not(:last-child)
-    margin-right: 100px
+    align-items: flex-start
+    padding: 0px 60px
+    width: 33%
+    
+    justify-content: space-between

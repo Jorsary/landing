@@ -635,6 +635,9 @@
   }
 }
 
+.about {
+  padding-bottom: 220px;
+}
 .about__container {
   padding-top: 282px;
   display: flex;
@@ -665,6 +668,7 @@
   font-size: 48px;
   line-height: 80px;
   color: #2A3246;
+  margin-bottom: -5px;
 }
 .about__name {
   text-align: center;
@@ -683,25 +687,28 @@
 .pricing__content {
   display: flex;
   align-content: space-between;
+  height: 582px;
 }
-.pricing__pricetag {
+.pricing__cost {
   display: flex;
   background: #EEEEEE;
   border-radius: 5px;
-  align-items: flex-start;
   cursor: pointer;
+  align-items: center;
+  padding: 0px 20px;
 }
-.pricing__pricetag-value {
+.pricing__cost-left {
   font-weight: 400;
   font-size: 30px;
   line-height: 45px;
   color: #263238;
 }
-.pricing__pricetag-permonth {
+.pricing__cost-right {
   font-weight: 400;
   font-size: 18px;
   line-height: 27px;
   color: #546269;
+  margin-left: 5px;
 }
 .pricing__namecourse {
   font-weight: 600;
@@ -719,10 +726,8 @@
 .price {
   display: flex;
   flex-direction: column;
-  align-items: space-between;
-  border: 1px solid;
-}
-
-.price::not(:last-child) {
-  margin-right: 100px;
+  align-items: flex-start;
+  padding: 0px 60px;
+  width: 33%;
+  justify-content: space-between;
 }/*# sourceMappingURL=style.css.map */
