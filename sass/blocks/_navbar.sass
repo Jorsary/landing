@@ -4,7 +4,8 @@
     background-color: #263238
     border-radius: 15px
     height: 120px
-    transition: 1.2s
+    transition: 0.7s
+    z-index: 20000
     @media screen and (max-width:$minLaptopWidth)
         height: 100px
     .header__navbar
@@ -22,11 +23,12 @@
             transition: 1.2s
 
         &-letstalk:hover
-            color: #ffffff
+            color: #263238
             border-width: 2px
             border-color: #263238
             border-radius: 5px
-            background-color: #263238
+            background-color: #ffffff
+            transform: scale(1.1)
             transition: 1.2s
         &-logo
             color: white
@@ -34,6 +36,8 @@
         &-links
             color: white
             transition: 1.2s
+        
+
 
 .header__navbar
     transition: 5s
@@ -53,7 +57,7 @@
 
         font-size: 20px
         font-weight: 500
-        font-family: 'poppins'
+        
         color: #263238
         align-items: center
         justify-content: space-between
@@ -113,6 +117,7 @@
         margin: 0 10px
         text-decoration: none
         color: black
+    
 
     &-letstalk
         padding: 17px 57px

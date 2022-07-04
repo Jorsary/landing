@@ -11,12 +11,12 @@
 
     <title>Document</title>
 </head>
-<style>
+<!-- <style>
     html {
         scroll-behavior: smooth;
         /* свойство scroll-behavior не наследуется, применяется к прокручиваемым блокам */
     }
-</style>
+</style> -->
 
 <body>
     <div id="wraper" class="wraper">
@@ -82,62 +82,47 @@
         </div>
         <!-- /.hero -->
         <div id="skills" class="skills">
-
             <div class="_container skills__container">
-
                 <div class="skills__content">
-
                     <h1 class="skills__title">Skills</h1>
                     <div class="skills__grid">
                         <div class="skills__item-speaking skill">
                             <img src="img/speaking.svg" class="skill__image">
                             <div class="skill__content">
-                                <div class="">
-                                    <h6 class="skill__title">Speaking</h6>
-                                    <p class="skill__text">Improve your English skills and confidence.
-                                        Live classes and interactive lessons online.
-                                        20% extra free for a limited time only</p>
-
-
-                                    <p class="skill__text">Learn English online and improve your<br>
-                                        skills through our high-quality courses
-                                        and resources – all designed for adult language learners.</p>
+                                <h6 class="skill__title">Speaking</h6>
+                                <p class="skill__text">Improve your English skills and confidence.
+                                    Live classes and interactive lessons online.
+                                    20% extra free for a limited time only</p>
+                                <p class="skill__text">Learn English online and improve your<br>
+                                    skills through our high-quality courses
+                                    and resources – all designed for adult language learners.</p>
                                 </div>
-
-
                                 <a class="button-dark skill__learnmore">Learn more</a>
-                            </div>
-
                         </div>
-
 
                         <div class="skills__item-writing skill">
                             <img src="img/writing.svg" class="skill__image">
                             <div class="skill__content">
-                                <div class="">
-                                    <h6 class="skill__title">Writing</h6>
-                                    <p class="skill__text">One of the most important and extensive
-                                        areas of natural science, the science that
-                                        studies substances, also their composition </p>
-                                </div>
-
-
-                                <a class="button-dark skill__learnmore">Learn more</a>
+                                <h6 class="skill__title">Writing</h6>
+                                <p class="skill__text">One of the most important and extensive
+                                    areas of natural science, the science that
+                                    studies substances, also their composition </p>
                             </div>
-
+                            <a class="button-dark skill__learnmore">Learn more</a>
                         </div>
+
                         <div class="skills__item-reading skill">
                             <img src="img/reading.svg" class="skill__image">
                             <div class="skill__content">
+
                                 <h6 class="skill__title">Reading</h6>
                                 <p class="skill__text">perception and response actions of the user
                                     resulting from the use and/or upcoming use
                                     of the product, system or service</p>
-
-                                <a class="button-dark skill__learnmore">Learn more</a>
                             </div>
-
+                            <a class="button-dark skill__learnmore">Learn more</a>
                         </div>
+
                         <div class="skills__item-listening skill">
                             <img src="img/Podcast.svg" class="skill__image">
                             <div class="skill__content">
@@ -145,11 +130,9 @@
                                 <p class="skill__text">Here you can find activities to practise
                                     your listening skills. Listening will help you
                                     to improve your understanding </p>
-                                <a class="button-dark skill__learnmore">Learn more</a>
                             </div>
-
+                            <a class="button-dark skill__learnmore">Learn more</a>
                         </div>
-
                     </div>
                 </div>
             </div>
@@ -178,9 +161,9 @@
                             <p class="about__name">Foreign languages</p>
                         </div>
                     </div>
-                </div>
-                <div class="about__image">
-                    <img src="img/dollar.svg" alt="" class="about__dollar">
+                    <div class="about__image">
+                        <img src="img/dollar.svg" alt="" class="about__dollar">
+                    </div>
                 </div>
             </div>
 
@@ -192,47 +175,54 @@
                 <div class="pricing__content">
                     <div class="pricing__item-selfstudy price">
                         <div class="pricing__image">
-                            <img src="img/self-study.svg" alt="" class="pricing__selfimg">
+                            <img src="img/self-study.svg" alt="" class="price__selfimg">
                         </div>
+                        <div class="price__text-info">
+                            <h3 class="price__namecourse">Self-study online course</h3>
+                            <p class="price__text">Start learning English online in live classes
+                                with qualified EC teachers and students
+                                from all over the world.</p>
+                            <div class="price__cost">
+                                <span class="price__cost-left">£5.99</span><span class="price__cost-right">per
+                                    month</span>
+                            </div>
 
-                        <h3 class="pricing__namecourse">Self-study online course</h3>
-                        <p class="pricing__text">Start learning English online in live classes
-                            with qualified EC teachers and students
-                            from all over the world.</p>
-                        <div class="pricing__cost">
-                            <span class="pricing__cost-left">£5.99</span><span class="pricing__cost-right">per
-                                month</span>
                         </div>
 
 
                     </div>
                     <div class="pricing__item-online price">
-                        <div class="pricing__image">
-                            <img src="img/Classes.svg" class="pricing__selfimg">
+                        <div class="price__image">
+                            <img src="img/Classes.svg" class="price__selfimg">
+                        </div>
+                        <div class="price__text-info">
+                            <h3 class="price__namecourse">Live online classes</h3>
+                            <p class="price__text">Interactive group classes with expert
+                                teachers. Free 7-day trial</p>
+                            <div class="price__cost">
+                                <span class="price__cost-left">£12.99</span><span class="price__cost-right">per
+                                    month</span>
+
+
+                            </div>
                         </div>
 
-                        <h3 class="pricing__namecourse">Live online classes</h3>
-                        <p class="pricing__text">Interactive group classes with expert
-                            teachers. Free 7-day trial</p>
-                        <div class="pricing__cost">
-                            <span class="pricing__cost-left">£12.99</span><span class="pricing__cost-right">per
-                                month</span>
 
-
-                        </div>
                     </div>
                     <div class="pricing__item-personal price">
-                        <div class="pricing__image">
-                            <img src="img/Personal.svg" class="pricing__selfimg">
+                        <div class="price__image">
+                            <img src="img/Personal.svg" class="price__selfimg">
+                        </div>
+                        <div class="price__text-info">
+                            <h3 class="price__namecourse">Personal Tuition</h3>
+                            <p class="price__text">Online one-to-one English tutoring – enjoy
+                                our first session for only $1</p>
+                            <div class="price__cost">
+                                <span class="price__cost-left">£20.99</span><span class="price__cost-right">per
+                                    month</span>
+                            </div>
                         </div>
 
-                        <h3 class="pricing__namecourse">Personal Tuition</h3>
-                        <p class="pricing__text">Online one-to-one English tutoring – enjoy
-                            our first session for only $1</p>
-                        <div class="pricing__cost">
-                            <span class="pricing__cost-left">£20.99</span><span class="pricing__cost-right">per
-                                month</span>
-                        </div>
 
 
                     </div>
@@ -241,6 +231,50 @@
 
         </div>
         <!-- /.pricing -->
+        <div class="contact-us">
+            <div class="_container contact-us__container">
+                <div class="contact-us__content">
+                    <div class="contact-us__image">
+                        <img src="img/contact-us.svg" alt="" class="contact-us__send-message">
+                    </div>
+                    
+                    <h1 class="contact-us__title">Contact Us</h1>
+                    
+                    <p class="contact-us__text">Discover your current English level by taking our free online English
+                        test.Sign up to our newsletter for learning tips and free resources</p>
+                    <div class="contact-us__contact-form">
+                        <input type="text" placeholder="       Enter Your E-mail" class="contact-us__form">
+                        <button type="submit" class="button-dark contact-us__subscribe">Subscribe</button>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+        <!-- /.contact-us -->
+        <footer class="footer">
+
+            <div class="_container footer__container">
+                <hr class="footer__line">
+                </hr>
+                <div class="footer__content">
+                    <div class="footer-logo">
+                        <span class="footer-logo__left">Brit</span><span class="footer-logo__right">lex</span>
+
+
+                    </div>
+                    <ul class="footer__menu">
+                        <a class="footer__links">Terms and Conditions</a>
+                        <span class="footer__links">•</span>
+                        <a class="footer__links">Privacy Policy</a>
+                        <span class="footer__links">•</span>
+                        <a class="footer__links">Cookie Policy</a>
+                    </ul>
+                </div>
+            </div>
+
+
+        </footer>
 
     </div>
 </body>

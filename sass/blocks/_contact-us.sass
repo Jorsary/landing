@@ -1,30 +1,44 @@
-.about
-
-    margin-top: 5%
+.contact-us
+    margin-top: 15%
     &__container
+
+        @media screen and (max-width:$minTabletWidth)
+            flex-direction: column
+            position: relative
+    &__image
+        grid-area: d
         
+
+        @media screen and (max-width:$minLaptopWidth)
+
     &__content
         display: grid
-        grid-template-areas: 'a d d' 'b d d' 'c d d'
-        
+        grid-template-areas: 'd d a' 'd d b' 'd d c'
+        @media screen and (max-width:$minLaptopWidth)
+
         @media screen and (max-width:$minTabletWidth)
             grid-template-areas: 'a' 'd' 'b' 'c'
             text-align: center
-            
+    &__send-message
+        max-width: 100%
+        
+        @media screen and (max-width:$minTabletWidth)
+            display: block
+            margin-left: auto
+            margin-right: auto
 
     &__title
         grid-area: a
+        order: 0
         font-weight: 600
         font-size: 48px
         line-height: 80px
-
+        margin: 0
         @media screen and (max-width:$minDescktopWidth)
             font-size: 36px
-
         @media screen and (max-width:$minLaptopWidth)
             font-size: 30px
         @media screen and (max-width:$minTabletWidth)
-            
 
     &__text
         grid-area: b
@@ -32,49 +46,39 @@
         font-size: 20px
         line-height: 30px
         color: #8F95A5
+
         @media screen and (max-width:$minDescktopWidth)
             font-size: 16px
-            line-height: 24px
         @media screen and (max-width:$minLaptopWidth)
             font-size: 14px
             line-height: 21px
-    &__stats
+    &__contact-form
         grid-area: c
         display: flex
-        justify-content: space-between
-    &__pupils
-
-    &__amount
-        text-align: center
-        font-weight: 600
-        font-size: 48px
-        line-height: 80px
-        color: #2A3246
-        margin-bottom: -5px
+        align-items: flex-start
+        margin-top: 52px
         @media screen and (max-width:$minDescktopWidth)
-            font-size: 30px
+    &__form
+        margin-right: 1%
+        width: 450px
+        height: 80px
+        border: 1px solid #8F95A5
+        border-radius: 10px
+        @media screen and (max-width:$minDescktopWidth)
+            width: 323px
+            height: 60px
         @media screen and (max-width:$minLaptopWidth)
-            font-size: 22px
-            line-height: 80px
+            width: 283px
+            height: 50px
+            border-radius: 5px
 
-    &__name
-        text-align: center
-        font-weight: 400
+    &__subscribe
+        padding: 23px 80px
+        font-weight: 500
         font-size: 20px
         line-height: 30px
-        color: #8F95A5
+        color: #FFFFFF
         @media screen and (max-width:$minDescktopWidth)
-            font-size: 16px
-            line-height: 24px
+            padding: 13px 56px
         @media screen and (max-width:$minLaptopWidth)
-            font-size: 13px
-            line-height: 20px
-    &__image
-        grid-area: d
-        margin-left: 194px
-        @media screen and (max-width:$minTabletWidth)
-            display: block
-            margin-left: auto
-            margin-right: auto
-    &__dollar
-        max-width: 100%
+            padding: 9px 40px

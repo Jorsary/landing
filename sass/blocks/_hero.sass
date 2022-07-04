@@ -1,10 +1,11 @@
 .hero
-    padding-bottom: 96px
     
+    margin-top: 6%
     &__container
-        padding-top: 65px
+        
         display: flex
         justify-content: space-between
+        align-items: flex-end
 
         @media screen and (max-width:$minTabletWidth)
             flex-flow: column-reverse
@@ -13,6 +14,7 @@
             text-align: center
 
     &__image
+
         @media screen and (max-width:$minDescktopWidth)
             max-width: 460px
         @media screen and (max-width:$minLaptopWidth)

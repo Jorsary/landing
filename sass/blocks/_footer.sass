@@ -1,0 +1,48 @@
+.footer
+    margin-top: 10%
+
+    &__content
+        display: flex
+        align-items: center
+        margin: 45px 0px
+        justify-content: space-between
+        @media screen and (max-width:$minDescktopWidth)
+            margin: 25px 0px
+        @media screen and (max-width:$minLaptopWidth)
+            margin: 20px 0px
+
+    &__line
+        border-top: 1px solid #C4C4C4
+        width: 100%
+    &__menu
+        display: flex
+        justify-content: space-between
+    &-logo
+        font-family: poppins
+        font-size: 36px
+        @media screen and (max-width:$minDescktopWidth)
+            font-size: 30px
+        @media screen and (max-width:$minLaptopWidth)
+            font-size: 30px;
+            line-height: 45px;
+        &__right
+            color: grey
+
+    &__links
+        position: relative
+        cursor: pointer
+
+        text-decoration: none
+        color: black
+        font-weight: 400
+        font-size: 24px
+        line-height: 36px
+        margin-right: 5px
+        color: #8F95A5
+        @media screen and (max-width:$minDescktopWidth)
+            font-size: 16px
+        @media screen and (max-width:$minLaptopWidth)
+            font-size: 13px
+            line-height: 20px
+    &__links:last-child
+        margin-right: 0
