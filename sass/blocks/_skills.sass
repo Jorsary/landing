@@ -4,7 +4,8 @@
     &__container
 
     &__content
-
+        null
+            
     &__title
         text-align: center
         font-size: 48px
@@ -30,7 +31,7 @@
         @media screen and (max-width:$minTabletWidth)
             gap: 30px
             grid-template-areas: 'a b ' 'c d'
-            grid-template-rows: 
+
         @media screen and (max-width:$minMobileWidth)
             display: flex
             flex-direction: column
@@ -56,7 +57,7 @@
             display: flex
             flex-direction: column
             grid-area: b
-            
+
             > img
                 width: 293px
                 height: 293px
@@ -73,7 +74,6 @@
             display: flex
             flex-direction: column
             grid-area: c
-            
 
             > img
                 width: 371px
@@ -95,7 +95,7 @@
         &-listening
 
             grid-area: d
-            
+
             @media screen and (max-width:$minTabletWidth)
                 display: flex
                 flex-direction: column
@@ -129,10 +129,14 @@
     @media screen and (max-width:$minTabletWidth)
         min-width: 240px
         min-height: 534px
+    @media screen and (max-width:$minMobileWidth)
+        min-width: auto
+        min-height: auto
+
 
     &__content
         margin-bottom: auto
-        
+
     &__title
         font-size: 30px
         line-height: 80px
@@ -147,7 +151,7 @@
         line-height: 24px
         color: #8F95A5
         padding-bottom: 25px
-        
+
         @media screen and (max-width:$minDescktopWidth)
             font-size: 14px
             line-height: 21px
@@ -165,7 +169,7 @@
         font-weight: 500
         align-self: start
         margin-bottom: 20px
-        
+
         @media screen and (max-width:$minDescktopWidth)
             font-size: 18px
             line-height: 27px

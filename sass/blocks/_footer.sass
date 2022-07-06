@@ -10,7 +10,8 @@
             margin: 25px 0px
         @media screen and (max-width:$minLaptopWidth)
             margin: 20px 0px
-
+        @media screen and (max-width:$minMobileWidth)
+            flex-direction: column
     &__line
         border-top: 1px solid #C4C4C4
         width: 100%
@@ -23,8 +24,12 @@
         @media screen and (max-width:$minDescktopWidth)
             font-size: 30px
         @media screen and (max-width:$minLaptopWidth)
-            font-size: 30px;
-            line-height: 45px;
+            font-size: 30px
+            line-height: 45px
+        @media screen and (max-width:$minMobileWidth)
+            font-weight: 400
+            font-size: 24px
+            line-height: 36px
         &__right
             color: grey
 
@@ -44,5 +49,13 @@
         @media screen and (max-width:$minLaptopWidth)
             font-size: 13px
             line-height: 20px
+            font-weight: 500
+        @media screen and (max-width:$minMobileWidth)
+            font-size: 11px
+            line-height: 16px
+            font-weight: 500
+            margin-right: 0
+            margin-top: 15px
+
     &__links:last-child
         margin-right: 0

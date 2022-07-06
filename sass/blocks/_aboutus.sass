@@ -2,15 +2,14 @@
 
     margin-top: 5%
     &__container
-        
+
     &__content
         display: grid
         grid-template-areas: 'a d d' 'b d d' 'c d d'
-        
+
         @media screen and (max-width:$minTabletWidth)
             grid-template-areas: 'a' 'd' 'b' 'c'
             text-align: center
-            
 
     &__title
         grid-area: a
@@ -24,7 +23,6 @@
         @media screen and (max-width:$minLaptopWidth)
             font-size: 30px
         @media screen and (max-width:$minTabletWidth)
-            
 
     &__text
         grid-area: b

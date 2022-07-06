@@ -7,10 +7,11 @@
             position: relative
     &__image
         grid-area: d
-        
 
         @media screen and (max-width:$minLaptopWidth)
-
+            margin-top: auto
+            margin-bottom: auto
+            
     &__content
         display: grid
         grid-template-areas: 'd d a' 'd d b' 'd d c'
@@ -19,9 +20,11 @@
         @media screen and (max-width:$minTabletWidth)
             grid-template-areas: 'a' 'd' 'b' 'c'
             text-align: center
+        @media screen and (max-width:$minMobileWidth)
+            gap:35px
     &__send-message
         max-width: 100%
-        
+
         @media screen and (max-width:$minTabletWidth)
             display: block
             margin-left: auto
@@ -38,7 +41,6 @@
             font-size: 36px
         @media screen and (max-width:$minLaptopWidth)
             font-size: 30px
-        @media screen and (max-width:$minTabletWidth)
 
     &__text
         grid-area: b
@@ -56,8 +58,11 @@
         grid-area: c
         display: flex
         align-items: flex-start
-        margin-top: 52px
-        @media screen and (max-width:$minDescktopWidth)
+
+        @media screen and (max-width:$minMobileWidth)
+            align-items: stretch
+            flex-direction: column
+            
     &__form
         margin-right: 1%
         width: 450px
@@ -71,6 +76,8 @@
             width: 283px
             height: 50px
             border-radius: 5px
+        @media screen and (max-width:$minMobileWidth)
+            width: 100%
 
     &__subscribe
         padding: 23px 80px
@@ -82,3 +89,5 @@
             padding: 13px 56px
         @media screen and (max-width:$minLaptopWidth)
             padding: 9px 40px
+        @media screen and (max-width:$minMobileWidth)
+            margin-top: 17px
